@@ -1,0 +1,241 @@
+.resume-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.contact-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--card-border);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+}
+
+.contact-chip:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.chip-icon {
+    color: #93c5fd;
+    /* Light blue accent for icons */
+    display: flex;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Tab Navigation */
+.tabs-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 24px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 10px 24px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tab-btn.active-tab {
+    background: var(--accent-indigo);
+    color: white;
+    box-shadow: 0 4px 14px 0 rgba(79, 70, 229, 0.39);
+}
+
+/* Tab Content */
+.tab-content-area {
+    min-height: 400px;
+}
+
+.tab-content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Resume Cards */
+.resume-card {
+    padding: 24px 32px;
+    transition: transform 0.2s ease;
+}
+
+.resume-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.resume-card-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #93c5fd;
+    /* Matching the blue title */
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    color: var(--text-tertiary);
+    font-size: 0.9rem;
+}
+
+.date-badge {
+    font-size: 0.85rem;
+    color: #a78bfa;
+    /* Light purple for date */
+    font-weight: 500;
+}
+
+.category-label {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.degree,
+.score {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.score {
+    color: var(--text-primary);
+}
+
+.resume-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.resume-list li {
+    margin-bottom: 8px;
+}
+
+.tech-stack-text {
+    margin-top: 16px;
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+}
+
+.project-title-resume {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.link-icon {
+    color: var(--text-secondary);
+    display: inline-flex;
+}
+
+.link-icon:hover {
+    color: var(--text-primary);
+}
+
+.content-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.resume-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn-download {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-indigo);
+    border-color: var(--accent-indigo);
+}
+
+.btn-download:hover {
+    background-color: #4338ca;
+    border-color: #4338ca;
+}
+
+/* Resume Skills Grid */
+.resume-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+}
+
+.skill-group-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    border-left: 3px solid var(--accent-blue);
+    padding-left: 12px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    background: rgba(147, 197, 253, 0.1);
+    color: #93c5fd;
+    border: 1px solid rgba(147, 197, 253, 0.2);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    background: rgba(147, 197, 253, 0.2);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 650px) {
+    .resume-card-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
