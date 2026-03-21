@@ -16,7 +16,7 @@ const Projects = () => {
             description: "Built a full-stack quick file share application enabling users to seamlessly share files and communicate in real-time within private rooms. Integrated Socket.io architecture for bi-directional messaging and efficient binary file streaming without persistent cloud storage.",
             techStack: ["React", "Node.js", "Express", "Socket.io"],
             github: "https://github.com/Shubham20040627/QuickFileTransfer",
-            live: "https://quickfiletransfer-7cf9.onrender.com/",
+            live: "https://quick-file-transfer.vercel.app/",
             category: ['Full Stack', 'Web App'],
             image: iftImg
         },

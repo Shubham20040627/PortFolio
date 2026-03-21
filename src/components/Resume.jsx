@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Phone, Linkedin, Github } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, ExternalLink } from 'lucide-react';
 import './Resume.css';
 
 const Resume = () => {
@@ -125,7 +125,11 @@ const Resume = () => {
                         <div className="resume-card card-glass">
                             <div className="resume-card-header">
                                 <div>
-                                    <h3 className="project-title-resume">Instant File Transfer <a href="https://github.com/Shubham20040627/QuickFileTransfer" target="_blank" rel="noreferrer" className="link-icon"><Github size={14} /></a></h3>
+                                    <h3 className="project-title-resume">
+                                        Instant File Transfer 
+                                        <a href="https://quick-file-transfer.vercel.app/" target="_blank" rel="noreferrer" className="link-icon" style={{ marginLeft: '10px' }}><ExternalLink size={14} /></a>
+                                        <a href="https://github.com/Shubham20040627/QuickFileTransfer" target="_blank" rel="noreferrer" className="link-icon" style={{ marginLeft: '10px' }}><Github size={14} /></a>
+                                    </h3>
                                     <p className="subtitle">Jul' 25</p>
                                 </div>
                             </div>
@@ -140,7 +144,11 @@ const Resume = () => {
                         <div className="resume-card card-glass">
                             <div className="resume-card-header">
                                 <div>
-                                    <h3 className="project-title-resume">AI Fitness Coach <a href="#" target="_blank" rel="noreferrer" className="link-icon"><Github size={14} /></a></h3>
+                                    <h3 className="project-title-resume">
+                                        AI Fitness Coach 
+                                        <a href="https://fitbot-lno0.onrender.com/" target="_blank" rel="noreferrer" className="link-icon" style={{ marginLeft: '10px' }}><ExternalLink size={14} /></a>
+                                        <a href="https://github.com/Shubham20040627/Chat-Bot" target="_blank" rel="noreferrer" className="link-icon" style={{ marginLeft: '10px' }}><Github size={14} /></a>
+                                    </h3>
                                     <p className="subtitle">Mar' 25</p>
                                 </div>
                             </div>
@@ -155,7 +163,11 @@ const Resume = () => {
                         <div className="resume-card card-glass">
                             <div className="resume-card-header">
                                 <div>
-                                    <h3 className="project-title-resume">Study Planner <a href="https://github.com/Shubham20040627/studyplanner" target="_blank" rel="noreferrer" className="link-icon"><Github size={14} /></a></h3>
+                                    <h3 className="project-title-resume">
+                                        Study Planner 
+                                        <a href="https://studyplanner-gold.vercel.app/" target="_blank" rel="noreferrer" className="link-icon" style={{ marginLeft: '10px' }}><ExternalLink size={14} /></a>
+                                        <a href="https://github.com/Shubham20040627/studyplanner" target="_blank" rel="noreferrer" className="link-icon" style={{ marginLeft: '10px' }}><Github size={14} /></a>
+                                    </h3>
                                     <p className="subtitle">Jan' 25</p>
                                 </div>
                             </div>
