@@ -6,7 +6,7 @@ import './Resume.css';
 const Resume = () => {
     const [activeTab, setActiveTab] = useState('Education');
 
-    const tabs = ['Education', 'Skills', 'Projects', 'Certificates'];
+    const tabs = ['Education', 'Experience', 'Skills', 'Projects', 'Certifications'];
 
     const contactInfo = [
         { icon: <Mail size={16} />, text: 'shubham20040627@gmail.com', href: 'mailto:shubham20040627@gmail.com' },
@@ -61,6 +61,45 @@ const Resume = () => {
                             </div>
                             <p className="degree">Matriculation</p>
                             <p className="score">Percentage: 85.4%</p>
+                        </div>
+                    </motion.div>
+                );
+
+            case 'Experience':
+                return (
+                    <motion.div
+                        key="experience"
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.3 }}
+                        className="tab-content-list"
+                    >
+                        <div className="resume-card card-glass">
+                            <div className="resume-card-header">
+                                <div>
+                                    <p className="category-label">TRAINING & INTERNSHIP</p>
+                                    <h3>Full Stack Web Development using MERN</h3>
+                                    <p className="subtitle">Cipher Schools (Edtech Company)</p>
+                                </div>
+                                <div className="date-badge">Jun' 25 - Jul' 25</div>
+                            </div>
+                            <ul className="resume-list">
+                                <li>Built dynamic web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
+                                <li>Configured secure authentication (JWT), CRUD operations, and deployed applications on cloud platforms.</li>
+                                <li>Gained hands-on experience in industry-level software development workflows.</li>
+                            </ul>
+                        </div>
+                        
+                        <div className="resume-card card-glass">
+                            <div className="resume-card-header">
+                                <div>
+                                    <p className="category-label">FUTURE GOALS</p>
+                                    <h3>Open to Internships & Work</h3>
+                                    <p className="subtitle">Remote / On-site</p>
+                                </div>
+                            </div>
+                            <p className="achievement-desc">Actively seeking opportunities to contribute to real-world projects and grow as a Software Engineer.</p>
                         </div>
                     </motion.div>
                 );
@@ -180,7 +219,7 @@ const Resume = () => {
                     </motion.div>
                 );
 
-            case 'Certificates':
+            case 'Certifications':
                 return (
                     <motion.div
                         key="certificates"
@@ -190,20 +229,6 @@ const Resume = () => {
                         transition={{ duration: 0.3 }}
                         className="tab-content-list"
                     >
-                        <div className="resume-card card-glass">
-                            <div className="resume-card-header">
-                                <div>
-                                    <p className="category-label">TRAINING</p>
-                                    <h3>Full Stack Web Development using MERN</h3>
-                                    <p className="subtitle">Cipher Schools (Edtech Company)</p>
-                                </div>
-                                <div className="date-badge">Jun' 25 - Jul' 25</div>
-                            </div>
-                            <ul className="resume-list">
-                                <li>Built dynamic web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
-                                <li>Configured secure authentication (JWT), CRUD operations, and deployed applications on cloud platforms.</li>
-                            </ul>
-                        </div>
 
                         <div className="resume-card card-glass">
                             <div className="resume-card-header">

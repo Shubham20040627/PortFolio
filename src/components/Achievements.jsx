@@ -23,7 +23,7 @@ const Achievements = () => {
                 transition={{ duration: 0.5 }}
             >
                 <h2 className="section-title">
-                    <span>Achievements</span>
+                    <span>Competitive Programming & Hackathons</span>
                 </h2>
             </motion.div>
 

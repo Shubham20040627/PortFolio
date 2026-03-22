@@ -54,7 +54,7 @@ const Projects = () => {
                 transition={{ duration: 0.5 }}
             >
                 <h2 className="section-title">
-                    <span>Featured Projects</span>
+                    <span>Projects</span>
                 </h2>
                 <p className="projects-subtitle">
                     A showcase of my work spanning web applications, APIs, and responsive interfaces.

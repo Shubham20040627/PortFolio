@@ -45,7 +45,7 @@ const Certifications = () => {
                 transition={{ duration: 0.5 }}
             >
                 <h2 className="section-title">
-                    <span>Certifications</span>
+                    <span>Certifications & Courses</span>
                 </h2>
                 <p className="certs-subtitle">
                     Professional credentials that validate my technical expertise and continuous learning journey.

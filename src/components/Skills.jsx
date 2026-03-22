@@ -43,7 +43,7 @@ const Skills = () => {
                 transition={{ duration: 0.5 }}
             >
                 <h2 className="section-title">
-                    <span>Technical Arsenal</span>
+                    <span>Skills & Technologies</span>
                 </h2>
                 <p className="skills-subtitle">
                     A showcase of technologies I've mastered on my journey as a developer.
