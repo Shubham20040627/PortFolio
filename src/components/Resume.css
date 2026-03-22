@@ -239,3 +239,208 @@
         gap: 12px;
     }
 }
+/* Internship Card Design Refresh */
+.internship-card {
+    padding: 2.5rem;
+    background: rgba(15, 23, 42, 0.3);
+    border: 1px solid var(--card-border);
+    border-top: 2px solid #ef4444 !important; /* The distinctive red top border */
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 32px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.internship-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(239, 68, 68, 0.4);
+    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
+}
+
+.internship-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.internship-header-left {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.internship-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.internship-titles h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary) !important;
+    margin-bottom: 6px;
+}
+
+.company-name {
+    color: #ef4444 !important;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.internship-header-right {
+    text-align: right;
+}
+
+.internship-date {
+    color: #ef4444;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.internship-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(16, 185, 129, 0.1);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.internship-desc {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    font-size: 1.05rem;
+}
+
+.internship-desc strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.key-learnings-section {
+    margin-bottom: 2.5rem;
+}
+
+.code-label {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-tertiary);
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+    opacity: 0.7;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.learning-item {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 14px 18px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
+}
+
+.learning-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+.learning-item .dot {
+    width: 6px;
+    height: 6px;
+    background: #ef4444;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.5);
+}
+
+.internship-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--card-border);
+}
+
+.tech-tags {
+    display: flex;
+    gap: 0.85rem;
+}
+
+.tech-tags .tag {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-cert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ef4444;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-cert:hover {
+    background: #ef4444;
+    color: white;
+    border-color: #ef4444;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -10px rgba(239, 68, 68, 0.5);
+}
+
+@media (max-width: 1000px) {
+    .learning-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .internship-card {
+        padding: 1.5rem;
+    }
+    .internship-header {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .internship-header-right {
+        text-align: left;
+    }
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+    .internship-footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+}
