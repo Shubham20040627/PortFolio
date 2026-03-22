@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Phone, Linkedin, Github, ExternalLink } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, ExternalLink, Monitor, Star } from 'lucide-react';
 import './Resume.css';
 
 const Resume = () => {
