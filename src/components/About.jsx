@@ -5,18 +5,39 @@ import './About.css';
 const About = () => {
     return (
         <section id="about" className="section container">
-            <motion.h2
-                className="section-title"
+            <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
+                className="section-header"
             >
-                <span>About Me</span>
-            </motion.h2>
+                <p className="code-label">// who i am</p>
+                <h2 className="section-title">About Me</h2>
+            </motion.div>
+
+                <div className="about-stats-grid">
+                    <div className="stat-card">
+                        <span className="stat-value">5+</span>
+                        <span className="stat-label">Projects Built</span>
+                    </div>
+                    <div className="stat-card">
+                        <span className="stat-value">100+</span>
+                        <span className="stat-label">Problems Solved</span>
+                    </div>
+                    <div className="stat-card">
+                        <span className="stat-value">2+</span>
+                        <span className="stat-label">Certifications</span>
+                    </div>
+                </div>
+
+                <div className="about-tags">
+                    <span className="about-tag">Open Source</span>
+                    <span className="about-tag">Web Development</span>
+                    <span className="about-tag">UI Design</span>
+                    <span className="about-tag">DSA Enthusiast</span>
+                </div>
 
             <div className="about-grid">
-
                 {/* Left Column (Quick Facts & Hobbies) */}
                 <div className="about-left-col">
 

@@ -108,3 +108,58 @@
     border-color: var(--text-secondary);
     transform: translateY(-2px);
 }
+/* Hero Highlights Grid */
+.hero-highlights-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 4rem;
+    width: 100%;
+}
+.hero-highlight-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--card-border);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.hero-highlight-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-5px);
+    border-color: rgba(239, 68, 68, 0.3);
+}
+.h-val {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+.h-info {
+    display: flex;
+    flex-direction: column;
+}
+.h-lab {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+.h-plat {
+    font-size: 0.7rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+@media (max-width: 900px) {
+    .hero-highlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px) {
+    .hero-highlights-container {
+        grid-template-columns: 1fr;
+        margin-top: 2.5rem;
+    }
+}

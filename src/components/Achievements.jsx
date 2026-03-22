@@ -30,49 +30,19 @@ const Achievements = () => {
         }
     ];
 
-    const highlights = [
-        { label: "Problems", value: "100+", platform: "LeetCode", color: "#ef4444" },
-        { label: "Solved", value: "50+", platform: "GFG", color: "#10b981" },
-        { label: "Primary", value: "C++", platform: "Language", color: "#3b82f6" },
-        { label: "Verified", value: "JS", platform: "HackerRank", color: "#f59e0b" },
-    ];
-
     return (
         <section id="achievements" className="section container">
             <motion.div
-                className="achievements-header"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
+                className="section-header"
             >
-                <h2 className="section-title">
-                    <span>Competitive Programming & Hackathons</span>
-                </h2>
+                <p className="code-label">// milestones</p>
+                <h2 className="section-title">Competitive Programming & Hackathons</h2>
             </motion.div>
 
-            <div className="highlights-grid">
-                <p className="code-label">// highlights</p>
-                <div className="highlights-container">
-                    {highlights.map((item, idx) => (
-                        <motion.div 
-                            key={idx} 
-                            className="highlight-card card-glass"
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: idx * 0.1 }}
-                        >
-                            <span className="h-value" style={{ color: item.color }}>{item.value}</span>
-                            <span className="h-label">{item.label}</span>
-                            <span className="h-platform">{item.platform}</span>
-                        </motion.div>
-                    ))}
-                </div>
-            </div>
-
             <div className="milestones-section">
-                <p className="code-label">// milestones</p>
                 <div className="achievements-list">
                     {achievements.map((achievement, index) => (
                         <motion.div

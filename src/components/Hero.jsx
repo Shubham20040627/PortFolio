@@ -1,8 +1,14 @@
 import { motion } from 'framer-motion';
-import heroImg from '../assets/hero.png';
+import { Github, Linkedin, Mail, ExternalLink, Flame, Trophy, Star, Code } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
+    const highlights = [
+        { label: "Problems", value: "100+", platform: "LeetCode", color: "#ef4444" },
+        { label: "Solved", value: "50+", platform: "GFG", color: "#10b981" },
+        { label: "Primary", value: "C++", platform: "Language", color: "#3b82f6" },
+        { label: "Verified", value: "JS", platform: "HackerRank", color: "#f59e0b" },
+    ];
     return (
         <section id="home" className="hero-section container">
             <div className="hero-content">
@@ -82,6 +88,22 @@ const Hero = () => {
                 >
                     <a href="#projects" className="btn btn-primary">View My Work</a>
                     <a href="#contact" className="btn btn-outline">Contact Me</a>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.8 }}
+                    className="hero-highlights-container"
+                >
+                    {highlights.map((item, idx) => (
+                        <div key={idx} className="hero-highlight-card">
+                            <span className="h-val" style={{ color: item.color }}>{item.value}</span>
+                            <div className="h-info">
+                                <span className="h-lab">{item.label}</span>
+                                <span className="h-plat">{item.platform}</span>
+                            </div>
+                        </div>
+                    ))}
                 </motion.div>
             </div>
         </section>

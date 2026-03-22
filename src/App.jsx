@@ -1,8 +1,9 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Resume from './components/Resume';
+import ResumeCTA from './components/ResumeCTA';
 import Skills from './components/Skills';
+import EducationDetail from './components/EducationDetail';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Achievements from './components/Achievements';
@@ -15,8 +16,9 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Resume />
+        <ResumeCTA />
         <Skills />
+        <EducationDetail />
         <Projects />
         <Certifications />
         <Achievements />

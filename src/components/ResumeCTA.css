@@ -1,0 +1,56 @@
+/* Resume CTA Styling */
+.resume-cta-card {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--card-border);
+    background: rgba(15, 23, 42, 0.3);
+}
+
+.resume-cta-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+.resume-cta-text {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.btn-resume {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.resume-cta-icon-box {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(239, 68, 68, 0.05); /* Very subtle red background icon */
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .resume-cta-card {
+        padding: 2rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .resume-cta-content {
+        max-width: 100%;
+    }
+    .btn-resume {
+        justify-content: center;
+    }
+    .resume-cta-icon-box {
+        display: none;
+    }
+}

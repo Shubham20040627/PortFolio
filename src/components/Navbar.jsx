@@ -16,12 +16,13 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Intro', href: '#home' },
+        { name: 'Home', href: '#home' },
         { name: 'About', href: '#about' },
+        { name: 'Resume', href: '#resume-cta' },
         { name: 'Skills', href: '#skills' },
-        { name: 'Experience', href: '#resume' }, // Links to the Experience/Resume section
+        { name: 'Education', href: '#education' },
         { name: 'Projects', href: '#projects' },
-        { name: 'Courses', href: '#certifications' },
+        { name: 'Certifications', href: '#certifications' },
         { name: 'Achievements', href: '#achievements' },
         { name: 'Contact', href: '#contact' },
     ];

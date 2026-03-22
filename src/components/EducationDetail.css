@@ -1,0 +1,125 @@
+/* Education Timeline Styling */
+.timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 4rem auto 0;
+    padding-bottom: 2rem;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 10px,
+        var(--card-border) 10px,
+        var(--card-border) 20px
+    );
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 4rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 17px;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    background: #0f172a;
+    border: 2px solid #ef4444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ef4444;
+    z-index: 2;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
+}
+
+.timeline-content {
+    padding: 2.5rem;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    border-color: rgba(239, 68, 68, 0.3);
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.edu-header h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    max-width: 80%;
+}
+
+.edu-date {
+    color: #ef4444;
+    font-weight: 700;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.edu-institution {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.edu-result {
+    color: #10b981;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.edu-desc {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        padding-left: 80px;
+    }
+    .timeline-dot {
+        width: 40px;
+        height: 40px;
+        left: 21px;
+    }
+    .timeline-line {
+        left: 40px;
+    }
+    .edu-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .edu-header h3 {
+        max-width: 100%;
+        font-size: 1.1rem;
+    }
+    .timeline-content {
+        padding: 1.5rem;
+    }
+}
