@@ -6,7 +6,7 @@ import './Resume.css';
 const Resume = () => {
     const [activeTab, setActiveTab] = useState('Education');
 
-    const tabs = ['Education', 'Experience', 'Skills', 'Projects', 'Certifications'];
+    const tabs = ['Education', 'Experience (Internships & Work)', 'Skills', 'Projects', 'Certifications & Courses'];
 
     const contactInfo = [
         { icon: <Mail size={16} />, text: 'shubham20040627@gmail.com', href: 'mailto:shubham20040627@gmail.com' },
@@ -65,7 +65,7 @@ const Resume = () => {
                     </motion.div>
                 );
 
-            case 'Experience':
+            case 'Experience (Internships & Work)':
                 return (
                     <motion.div
                         key="experience"
@@ -219,7 +219,7 @@ const Resume = () => {
                     </motion.div>
                 );
 
-            case 'Certifications':
+            case 'Certifications & Courses':
                 return (
                     <motion.div
                         key="certificates"
