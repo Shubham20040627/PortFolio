@@ -8,6 +8,28 @@ const Hero = () => {
             <div className="hero-content">
 
                 <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    style={{ marginBottom: '1rem', textAlign: 'center' }}
+                >
+                    <span 
+                        className="badge" 
+                        style={{ 
+                            background: 'rgba(59, 130, 246, 0.1)', 
+                            color: 'var(--accent-blue)', 
+                            border: '1px solid rgba(59, 130, 246, 0.2)',
+                            fontSize: '0.75rem',
+                            padding: '4px 12px',
+                            borderRadius: '20px',
+                            display: 'inline-block'
+                        }}
+                    >
+                        Introduction & Summary
+                    </span>
+                </motion.div>
+
+                <motion.div
                     className="profile-image-container"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
