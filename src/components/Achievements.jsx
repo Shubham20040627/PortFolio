@@ -20,14 +20,7 @@ const Achievements = () => {
             description: "Strengthened algorithmic logic and problem-solving skills on the GFG platform.",
             link: "https://www.geeksforgeeks.org/profile/shubham14kji",
         },
-        {
-            icon: <Star size={24} />,
-            title: "JavaScript Basic Cert",
-            platform: "HackerRank",
-            date: "Mar 2026",
-            description: "Verified proficiency in JavaScript fundamentals including Functions, Hoisting, and Scope.",
-            link: "https://www.hackerrank.com/certificates/7e9d2c755889",
-        }
+
     ];
 
     return (

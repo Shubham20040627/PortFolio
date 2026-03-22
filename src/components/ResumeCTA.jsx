@@ -129,6 +129,7 @@ const ResumeCTA = () => {
                                     <li><strong className="cv-strong">Complete Python Developer</strong> · Udemy (Nov' 23)</li>
                                     <li><strong className="cv-strong">Mastering in C</strong> · CSE Pathshala (Mar' 24)</li>
                                     <li><strong className="cv-strong">Full Stack Web Dev (MERN)</strong> · Cipher Schools (Jul' 25)</li>
+                                <li><strong className="cv-strong">JavaScript (Basic)</strong> · HackerRank (Mar' 26)</li>
                                 </ul>
                             </div>
                         </div>

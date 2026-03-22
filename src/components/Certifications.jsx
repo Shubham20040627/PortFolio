@@ -3,6 +3,7 @@ import './Certifications.css';
 import cipherImg from '../assets/cipher.png';
 import udemyImg from '../assets/udemy.png';
 import cProgImg from '../assets/c-prog.png';
+import hackerrankImg from '../assets/hackerrank.png';
 
 const Certifications = () => {
     const certs = [
@@ -32,6 +33,15 @@ const Certifications = () => {
             brandColor: "#0891b2", // Cyan base for variety
             link: "https://drive.google.com/file/d/1cBQbAEOkLJe-FB5yIv4O1V8wJh4dxula/view?usp=drive_link",
             image: cProgImg
+        },
+        {
+            title: "JavaScript (Basic) Certificate",
+            provider: "HackerRank",
+            date: "Mar' 26",
+            description: "Verified proficiency in core JavaScript fundamentals covering Functions, Hoisting, and Scope logic.",
+            brandColor: "#059669", // Emerald green for HackerRank
+            link: "https://www.hackerrank.com/certificates/7e9d2c755889",
+            image: hackerrankImg
         }
     ];
 
