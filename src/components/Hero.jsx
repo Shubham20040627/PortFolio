@@ -29,14 +29,7 @@ const Hero = () => {
                     </span>
                 </motion.div>
 
-                <motion.div
-                    className="profile-image-container"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
-                >
-                    <img src={heroImg} alt="Shubham" className="profile-image" />
-                </motion.div>
+                {/* Profile image removed per user request */}
 
                 <motion.h1
                     className="hero-title"

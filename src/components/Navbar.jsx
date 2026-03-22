@@ -30,9 +30,8 @@ const Navbar = () => {
         <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container nav-container">
 
-                {/* Updated Logo style based on sample */}
+                {/* Removed Profile Image for a cleaner, text-focused look */}
                 <a href="#home" className="logo">
-                    <img src={heroImg} alt="Shubham" className="nav-profile-img" />
                     <span style={{ color: "var(--accent-blue)" }}>Shubham</span> Portfolio
                 </a>
 
