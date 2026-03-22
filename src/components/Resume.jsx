@@ -75,31 +75,71 @@ const Resume = () => {
                         transition={{ duration: 0.3 }}
                         className="tab-content-list"
                     >
-                        <div className="resume-card card-glass">
-                            <div className="resume-card-header">
-                                <div>
-                                    <p className="category-label">TRAINING & INTERNSHIP</p>
-                                    <h3>Full Stack Web Development using MERN</h3>
-                                    <p className="subtitle">Cipher Schools (Edtech Company)</p>
+                        <div className="internship-card card-glass">
+                            <div className="internship-header">
+                                <div className="internship-header-left">
+                                    <div className="internship-icon">
+                                        <Monitor size={20} />
+                                    </div>
+                                    <div className="internship-titles">
+                                        <h3>Full Stack Web Development — MERN</h3>
+                                        <p className="company-name">Cipher Schools · Edtech Company</p>
+                                    </div>
                                 </div>
-                                <div className="date-badge">Jun' 25 - Jul' 25</div>
+                                <div className="internship-header-right">
+                                    <div className="internship-date">Jun' 25 - Jul' 25</div>
+                                    <div className="internship-badge">Training & Internship</div>
+                                </div>
                             </div>
-                            <ul className="resume-list">
-                                <li>Built dynamic web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
-                                <li>Configured secure authentication (JWT), CRUD operations, and deployed applications on cloud platforms.</li>
-                                <li>Gained hands-on experience in industry-level software development workflows.</li>
-                            </ul>
+                            
+                            <div className="internship-body">
+                                <p className="internship-desc">
+                                    Completed an intensive industrial training program focused on the <strong>MERN stack</strong>. 
+                                    Developed high-performance web applications using <strong>MongoDB, Express.js, React, and Node.js</strong>, 
+                                    ensuring secure data management and seamless user experiences.
+                                </p>
+                                
+                                <div className="key-learnings-section">
+                                    <p className="code-label">// key learnings</p>
+                                    <div className="learning-grid">
+                                        <div className="learning-item"><span className="dot"></span> Full-stack Integration</div>
+                                        <div className="learning-item"><span className="dot"></span> JWT Authentication</div>
+                                        <div className="learning-item"><span className="dot"></span> RESTful API Design</div>
+                                        <div className="learning-item"><span className="dot"></span> Database Modeling</div>
+                                        <div className="learning-item"><span className="dot"></span> Cloud Deployment</div>
+                                        <div className="learning-item"><span className="dot"></span> Real-time Features</div>
+                                    </div>
+                                </div>
+                                
+                                <div className="internship-footer">
+                                    <div className="tech-tags">
+                                        <span className="tag">React</span>
+                                        <span className="tag">Node.js</span>
+                                        <span className="tag">MongoDB</span>
+                                        <span className="tag">Express</span>
+                                    </div>
+                                    <a href="https://drive.google.com/file/d/1K711G-bIumNzE422BPIrZaz1KPsCw38Y/view?usp=sharing" target="_blank" rel="noreferrer" className="btn-cert">
+                                        View Certificate <ExternalLink size={14} />
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <div className="resume-card card-glass">
-                            <div className="resume-card-header">
-                                <div>
-                                    <p className="category-label">FUTURE GOALS</p>
-                                    <h3>Open to Internships & Work</h3>
-                                    <p className="subtitle">Remote / On-site</p>
+
+                        <div className="internship-card card-glass" style={{ borderTop: '2px solid var(--text-tertiary)' }}>
+                            <div className="internship-header">
+                                <div className="internship-header-left">
+                                    <div className="internship-icon" style={{ background: 'rgba(255, 255, 255, 0.05)' }}>
+                                        <Star size={20} />
+                                    </div>
+                                    <div className="internship-titles">
+                                        <h3>Open to Internships & Work</h3>
+                                        <p className="company-name">Remote / On-site opportunities</p>
+                                    </div>
                                 </div>
                             </div>
-                            <p className="achievement-desc">Actively seeking opportunities to contribute to real-world projects and grow as a Software Engineer.</p>
+                            <div className="internship-body">
+                                <p className="internship-desc">Actively seeking opportunities to contribute to real-world projects and grow as a Software Engineer specialized in web technologies.</p>
+                            </div>
                         </div>
                     </motion.div>
                 );
