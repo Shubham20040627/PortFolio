@@ -53,12 +53,12 @@ const Projects = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
             >
-                <h2 className="section-title">
-                    <span>Projects</span>
-                </h2>
+                <p className="code-label">// what i've built</p>
+                <h2 className="section-title">Projects</h2>
                 <p className="projects-subtitle">
                     A showcase of my work spanning web applications, APIs, and responsive interfaces.
                 </p>
+            </motion.div>
 
                 {/* Filters */}
                 <div className="projects-filters">

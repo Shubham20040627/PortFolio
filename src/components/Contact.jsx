@@ -12,12 +12,12 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
             >
-                <h2 className="section-title">
-                    <span>Get In Touch</span>
-                </h2>
+                <p className="code-label">// let's connect</p>
+                <h2 className="section-title">Contact Me</h2>
                 <p className="contact-subtitle">
                     Have a question or want to work together? Fill out the form below or reach out directly through my contact information.
                 </p>
+            </motion.div>
             </motion.div>
 
             <div className="contact-grid">
