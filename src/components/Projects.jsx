@@ -25,7 +25,7 @@ const Projects = () => {
             description: "Engineered an AI-powered fitness assistant using the Google Gemini API to generate personalized workout routines and diet plans. Built a secure RESTful API implementing JWT-based authentication for encrypted user login and protected data access.",
             techStack: ["JavaScript", "Node.js", "Express.js", "MongoDB", "Google Gemini API"],
             github: "https://github.com/Shubham20040627/Chat-Bot",
-            live: "https://fitbot-lno0.onrender.com/",
+            live: "https://chat-bot-olive-omega.vercel.app/",
             category: ['API Integration', 'Full Stack'],
             image: fitbotImg
         },

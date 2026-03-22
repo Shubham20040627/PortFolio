@@ -146,7 +146,7 @@ const Resume = () => {
                                 <div>
                                     <h3 className="project-title-resume">
                                         AI Fitness Coach 
-                                        <a href="https://fitbot-lno0.onrender.com/" target="_blank" rel="noreferrer" className="link-icon" style={{ marginLeft: '10px' }}><ExternalLink size={14} /></a>
+                                        <a href="https://chat-bot-olive-omega.vercel.app/" target="_blank" rel="noreferrer" className="link-icon" style={{ marginLeft: '10px' }}><ExternalLink size={14} /></a>
                                         <a href="https://github.com/Shubham20040627/Chat-Bot" target="_blank" rel="noreferrer" className="link-icon" style={{ marginLeft: '10px' }}><Github size={14} /></a>
                                     </h3>
                                     <p className="subtitle">Mar' 25</p>
