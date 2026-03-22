@@ -72,7 +72,6 @@ const Projects = () => {
                         </button>
                     ))}
                 </div>
-            </motion.div>
 
             <div className="projects-grid-redesign">
                 {filteredProjects.map((project, index) => (
