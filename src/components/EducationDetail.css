@@ -1,8 +1,8 @@
-/* Education Timeline Styling */
+/* Education Timeline Styling for Minimalist Dark Aesthetic */
 .timeline-container {
     position: relative;
-    max-width: 1000px;
-    margin: 4rem auto 0;
+    max-width: 900px;
+    margin: 3rem auto 0;
     padding-bottom: 2rem;
 }
 
@@ -16,8 +16,8 @@
         to bottom,
         transparent,
         transparent 10px,
-        var(--card-border) 10px,
-        var(--card-border) 20px
+        var(--border-subtle) 10px,
+        var(--border-subtle) 20px
     );
 }
 
@@ -37,66 +37,63 @@
     top: 0;
     width: 48px;
     height: 48px;
-    background: #0f172a;
-    border: 2px solid #ef4444;
+    background-color: var(--bg-dark);
+    border: 2px solid var(--accent-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ef4444;
+    color: var(--accent-primary);
     z-index: 2;
-    box-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
+    box-shadow: 0 0 15px var(--accent-transparent);
 }
 
 .timeline-content {
-    padding: 2.5rem;
-    position: relative;
-    transition: transform 0.3s ease;
-}
-
-.timeline-content:hover {
-    transform: translateY(-5px);
-    border-color: rgba(239, 68, 68, 0.3);
+    padding: 32px 40px;
 }
 
 .edu-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 12px;
 }
 
 .edu-header h3 {
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-main);
     max-width: 80%;
 }
 
 .edu-date {
-    color: #ef4444;
-    font-weight: 700;
-    font-size: 0.95rem;
+    color: var(--accent-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
     white-space: nowrap;
+    background-color: var(--accent-transparent);
+    padding: 4px 12px;
+    border-radius: 4px;
 }
 
 .edu-institution {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-primary);
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--text-main);
     margin-bottom: 8px;
 }
 
 .edu-result {
-    color: #10b981;
-    font-weight: 700;
-    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.95rem;
     margin-bottom: 1.5rem;
 }
 
 .edu-desc {
-    color: var(--text-secondary);
+    color: var(--text-muted);
     line-height: 1.7;
+    font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
@@ -113,13 +110,13 @@
     }
     .edu-header {
         flex-direction: column;
-        gap: 8px;
+        gap: 12px;
     }
     .edu-header h3 {
         max-width: 100%;
         font-size: 1.1rem;
     }
     .timeline-content {
-        padding: 1.5rem;
+        padding: 24px;
     }
 }

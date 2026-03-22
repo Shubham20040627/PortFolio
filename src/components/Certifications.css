@@ -18,20 +18,16 @@
     gap: 24px;
 }
 
-.cert-card-glass {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
+.cert-card-dark {
+    padding: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
 }
 
-.cert-card-glass:hover {
+.cert-card-dark:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.3);
 }
 
 /* Mocking the certificate image area */
@@ -103,8 +99,7 @@
 }
 
 .cert-title {
-    color: #93c5fd;
-    /* Light blue accent */
+    color: var(--text-main);
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 12px;
@@ -130,8 +125,7 @@
 .cert-hover-hint {
     text-align: center;
     padding: 12px;
-    font-size: 0.8rem;
-    color: var(--text-tertiary);
-    border-top: 1px solid var(--card-border);
-    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-subtle);
 }

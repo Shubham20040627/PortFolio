@@ -6,25 +6,25 @@ const EducationDetail = () => {
     const education = [
         {
             title: "Bachelor of Technology in Computer Science and Engineering",
-            institution: "Lovely Professional University",
-            date: "2022 — 2026",
-            result: "CGPA: 7.21",
+            institution: "Lovely Professional University, Phagwara, Punjab",
+            date: "Aug' 23 — Present",
+            result: "CGPA: 7.19",
             description: "Specializing in full-stack development and software engineering. Engaging in advanced coursework and hands-on projects.",
             icon: <GraduationCap size={24} />
         },
         {
-            title: "XII (Non-Medical)",
-            institution: "S.D Model School",
-            date: "2021 — 2022",
-            result: "Percentage: 82%",
+            title: "Intermediate (PCM)",
+            institution: "Army Public School, Meerut, Uttar Pradesh",
+            date: "Mar' 21 — May' 22",
+            result: "Percentage: 91.4%",
             description: "Focused on core science and mathematics, building a strong foundation for engineering.",
             icon: <BookOpen size={24} />
         },
         {
-            title: "X",
-            institution: "S.D Model School",
-            date: "2019 — 2020",
-            result: "Percentage: 80%",
+            title: "Matriculation",
+            institution: "Army Public School, Meerut, Uttar Pradesh",
+            date: "Mar' 19 — May' 20",
+            result: "Percentage: 85.4%",
             description: "Completed secondary education with high performance in all subjects.",
             icon: <School size={24} />
         }
@@ -56,7 +56,7 @@ const EducationDetail = () => {
                         <div className="timeline-dot">
                             {edu.icon}
                         </div>
-                        <div className="timeline-content card-glass">
+                        <div className="timeline-content card-dark">
                             <div className="edu-header">
                                 <h3>{edu.title}</h3>
                                 <span className="edu-date">{edu.date}</span>

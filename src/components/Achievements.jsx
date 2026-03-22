@@ -1,30 +1,30 @@
 import { motion } from 'framer-motion';
-import { Flame, Lightbulb, Trophy, Star, ExternalLink } from 'lucide-react';
+import { Flame, Trophy, Star, ExternalLink } from 'lucide-react';
 import './Achievements.css';
 
 const Achievements = () => {
     const achievements = [
         {
-            icon: <Flame size={20} />,
-            title: "100+ DSA Problems Solved",
+            icon: <Flame size={24} />,
+            title: "100+ Data Structures",
             platform: "LeetCode",
-            date: "Feb' 26",
+            date: "Feb 2026",
             description: "Mastered core Data Structures and Algorithms by solving 100+ problems using C++.",
             link: "https://leetcode.com/u/shubham20040627/",
         },
         {
-            icon: <Trophy size={20} />,
-            title: "50+ Problems Solved",
+            icon: <Trophy size={24} />,
+            title: "50+ Target Problems",
             platform: "GeeksforGeeks",
-            date: "Jan' 26",
-            description: "Strengthened algorithmic logic and problem-solving skills on GFG platform.",
+            date: "Jan 2026",
+            description: "Strengthened algorithmic logic and problem-solving skills on the GFG platform.",
             link: "https://www.geeksforgeeks.org/profile/shubham14kji",
         },
         {
-            icon: <Star size={20} />,
-            title: "JavaScript (Basic) Certificate",
+            icon: <Star size={24} />,
+            title: "JavaScript Basic Cert",
             platform: "HackerRank",
-            date: "Mar' 26",
+            date: "Mar 2026",
             description: "Verified proficiency in JavaScript fundamentals including Functions, Hoisting, and Scope.",
             link: "https://www.hackerrank.com/certificates/7e9d2c755889",
         }
@@ -42,38 +42,37 @@ const Achievements = () => {
                 <h2 className="section-title">Competitive Programming & Hackathons</h2>
             </motion.div>
 
-            <div className="milestones-section">
-                <div className="achievements-list">
-                    {achievements.map((achievement, index) => (
-                        <motion.div
-                            className="achievement-card card-glass"
-                            key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.4, delay: index * 0.1 }}
-                        >
-                            <div className="a-card-header">
-                                <div className="a-icon-box">
-                                    {achievement.icon}
-                                </div>
-                                <div className="a-title-area">
-                                    <h3>{achievement.title}</h3>
-                                    <p className="a-platform">{achievement.platform}</p>
-                                </div>
-                                <span className="a-date">{achievement.date}</span>
+            <div className="achievements-grid">
+                {achievements.map((achievement, index) => (
+                    <motion.div
+                        className="achievement-card card-dark"
+                        key={index}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay: index * 0.1 }}
+                    >
+                        <div className="a-card-header">
+                            <div className="a-icon-box">
+                                {achievement.icon}
                             </div>
-                            
-                            <p className="achievement-desc">{achievement.description}</p>
-                            
-                            <div className="a-footer">
-                                <a href={achievement.link} target="_blank" rel="noreferrer" className="a-link">
-                                    View on {achievement.platform} <ExternalLink size={14} />
-                                </a>
-                            </div>
-                        </motion.div>
-                    ))}
-                </div>
+                            <span className="a-date">{achievement.date}</span>
+                        </div>
+                        
+                        <div className="a-title-area">
+                            <h3>{achievement.title}</h3>
+                            <p className="a-platform text-accent">{achievement.platform}</p>
+                        </div>
+                        
+                        <p className="achievement-desc text-muted">{achievement.description}</p>
+                        
+                        <div className="a-footer">
+                            <a href={achievement.link} target="_blank" rel="noreferrer" className="a-link btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 20px' }}>
+                                View Profile <ExternalLink size={14} />
+                            </a>
+                        </div>
+                    </motion.div>
+                ))}
             </div>
         </section>
     );

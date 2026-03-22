@@ -44,9 +44,7 @@ const Certifications = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
             >
-                <h2 className="section-title">
-                    <span>Certifications & Courses</span>
-                </h2>
+                <h2 className="section-title">Certifications & Courses</h2>
                 <p className="certs-subtitle">
                     Professional credentials that validate my technical expertise and continuous learning journey.
                 </p>
@@ -55,7 +53,7 @@ const Certifications = () => {
             <div className="certs-grid">
                 {certs.map((cert, index) => (
                     <motion.div
-                        className="cert-card-glass"
+                        className="cert-card-dark card-dark"
                         key={index}
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -85,7 +83,7 @@ const Certifications = () => {
                                         <span className="cert-provider-text">{cert.provider}</span>
                                         <span className="cert-date-text" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                             {cert.date} 
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                         </span>
                                     </div>
                                 </div>

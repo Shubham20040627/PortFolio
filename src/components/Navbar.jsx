@@ -33,7 +33,7 @@ const Navbar = () => {
 
                 {/* Removed Profile Image for a cleaner, text-focused look */}
                 <a href="#home" className="logo">
-                    <span style={{ color: "var(--accent-blue)" }}>Shubham</span> Portfolio
+                    <span className="logo-text">Shubham</span>
                 </a>
 
                 <nav className="desktop-nav">

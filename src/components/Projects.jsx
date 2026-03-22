@@ -76,7 +76,7 @@ const Projects = () => {
             <div className="projects-grid-redesign">
                 {filteredProjects.map((project, index) => (
                     <motion.div
-                        className="project-card-redesign card-glass"
+                        className="project-card-redesign card-dark"
                         key={project.title}
                         layout
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -104,11 +104,11 @@ const Projects = () => {
                             </div>
 
                             <div className="project-actions">
-                                <a href={project.live} className="btn-project btn-live" target="_blank" rel="noreferrer">
+                                <a href={project.live} className="btn-primary" style={{flex: 1, textAlign: 'center'}} target="_blank" rel="noreferrer">
                                     Live Demo
                                 </a>
-                                <a href={project.github} className="btn-project btn-source" target="_blank" rel="noreferrer">
-                                    Source Code
+                                <a href={project.github} className="btn-outline" style={{flex: 1, textAlign: 'center'}} target="_blank" rel="noreferrer">
+                                    Source
                                 </a>
                             </div>
                         </div>
