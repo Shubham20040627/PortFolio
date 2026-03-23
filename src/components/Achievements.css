@@ -1,19 +1,26 @@
 .achievements-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
 .achievement-card {
+    flex: 1;
+    min-width: 320px;
+    max-width: 400px;
     padding: 32px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .a-card-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
     margin-bottom: 24px;
 }
 
@@ -68,14 +75,9 @@
     width: auto;
 }
 
-@media (max-width: 1024px) {
-    .achievements-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (max-width: 768px) {
-    .achievements-grid {
-        grid-template-columns: 1fr;
+    .achievement-card {
+        min-width: 100%;
+        max-width: none;
     }
 }

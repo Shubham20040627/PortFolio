@@ -33,7 +33,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    Full Stack Developer & Competitive Programmer
+                    Full Stack Developer
                 </motion.h2>
 
                 <motion.p
@@ -42,8 +42,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    I specialize in building top-notch web applications and solving complex algorithmic problems.
-                    Welcome to my digital playground where I craft elegant solutions through code.
+                    I specialize in building top-notch web applications and crafting elegant solutions through code.
                 </motion.p>
 
                 <motion.div
